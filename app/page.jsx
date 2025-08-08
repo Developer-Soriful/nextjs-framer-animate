@@ -9,6 +9,7 @@ import HoverImageMenu from "./components/HoverImageMenu";
 import GetInTouch from "./components/GetInTouch";
 import TopThreeNews from "./components/common/TopThreeNews";
 const Home = () => {
+
   return (
     <div>
       <div
@@ -63,7 +64,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <section className="min-h-screen flex items-center justify-center bg-[#f8ede3] mx-4 lg:mx-[62px]">
+      <section className=" flex items-center justify-center bg-[#f8ede3] mx-4 lg:mx-[62px]">
         <AboutUs />
       </section>
       {/* this is for animated img card */}

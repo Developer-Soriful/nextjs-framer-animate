@@ -39,7 +39,7 @@ export default function SmoothHoverImageMenu() {
   const [hoveredImage, setHoveredImage] = useState(defaultImage);
 
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-start md:items-center justify-start md:justify-center bg-[#f8ede3] gap-10 py-[100px] lg:py-[200px]">
+    <section className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-center bg-[#f8ede3] gap-10 h-full py-[100px] lg:py-[200px]">
       {/* Left Image Display (Only visible on md and up) */}
       <div className="hidden md:block w-full md:w-1/2 h-[400px] md:h-[685px] relative overflow-hidden rounded-xl bg-[#f8ede3]">
         <AnimatePresence mode="wait">
