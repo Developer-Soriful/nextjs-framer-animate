@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import OurApproach from "../components/common/OurApproach";
 import OurTeam from "../components/common/OurTeam";
+import WhyUs from "../components/common/WhyUs";
 
 const AboutSection = () => {
   return (
@@ -47,6 +48,7 @@ const AboutSection = () => {
       {/* this is for our team */}
       <OurTeam />
       {/* this is for why us */}
+      <WhyUs/>
       
     </div>
   );
