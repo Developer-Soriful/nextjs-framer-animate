@@ -5,11 +5,14 @@ import Image from "next/image";
 import OurApproach from "../components/common/OurApproach";
 import OurTeam from "../components/common/OurTeam";
 import WhyUs from "../components/common/WhyUs";
+import ImageScrollStack from "../components/ImageScrollStack";
+import GetInTouch from "../components/GetInTouch";
+import TopThreeNews from "../components/common/TopThreeNews";
 
 const AboutSection = () => {
   return (
-    <div className=" px-4 lg:px-[50px]">
-      <div className=" py-[100px] lg:py-[200px] flex flex-col justify-center items-center gap-[60px]">
+    <div>
+      <div className=" px-4 lg:px-[50px]  py-[100px] lg:py-[200px] flex flex-col justify-center items-center gap-[60px]">
         <motion.h1 className="text-[46px] lg:text-[96px] text-center lg:w-[800px] ">
           {["Crafting", "Timeless", "Spaces", "with", "Style"].map(
             (word, index) => (
@@ -44,12 +47,21 @@ const AboutSection = () => {
         </motion.div>
       </div>
       {/* this is for approach */}
-      <OurApproach />
+      <div className=" px-4 lg:px-[50px]">
+        <OurApproach />
+      </div>
       {/* this is for our team */}
-      <OurTeam />
+      <div className=" px-4 lg:px-[50px]">
+        <OurTeam />
+      </div>
       {/* this is for why us */}
-      <WhyUs/>
-      
+      <div className=" px-4 lg:px-[50px]">
+        <WhyUs />
+      </div>
+      {/* this is for img scroll */}
+      <GetInTouch />
+      {/* this is for top news */}
+      <TopThreeNews/>
     </div>
   );
 };

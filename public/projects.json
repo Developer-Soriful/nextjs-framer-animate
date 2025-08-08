@@ -1,0 +1,28 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Where Tradition Meets Mastery",
+      "description": "Blending Tradition with Modern Elegance",
+      "img": "/img23.avif"
+    },
+    {
+      "id": 2,
+      "title": "Luxurious Coastal Living",
+      "description": "Bring in the beauty of the shore into our home.",
+      "img": "/img24.avif"
+    },
+    {
+      "id": 3,
+      "title": "Modern Elegance in Every Room",
+      "description": "Redefining spaces with timeless style and innovation.",
+      "img": "/img25.avif"
+    },
+    {
+      "id": 4,
+      "title": "Serene Urban Retreat",
+      "description": "Where modern comfort meets peaceful sophistication.",
+      "img": "/img26.avif"
+    }
+  ]
+}
