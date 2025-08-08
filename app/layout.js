@@ -1,5 +1,9 @@
+// import { motion } from "motion/react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
+import FramerSmoothScrollProvider from "./components/common/FramerSmoothScrollProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,10 +23,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased `}>
+        {/*
+          FramerSmoothScrollProvider-কে সমস্ত দৃশ্যমান UI-এর চারপাশে wrap করা হয়েছে।
+          এতে Header, main content, এবং Footer একটি একক smooth scrolling context-এর অংশ হবে।
+        */}
+        <FramerSmoothScrollProvider>
+          <header className="fixed top-0 z-50 w-full bg-transplant ">
+            <Header />
+          </header>
+          <main>
+            {children}
+          </main>
+          <Footer />
+        </FramerSmoothScrollProvider>
       </body>
     </html>
   );
