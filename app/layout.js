@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import FramerSmoothScrollProvider from "./components/common/FramerSmoothScrollProvider";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

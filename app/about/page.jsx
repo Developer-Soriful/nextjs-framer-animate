@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import OurApproach from "../components/common/OurApproach";
+import OurTeam from "../components/common/OurTeam";
 
 const AboutSection = () => {
   return (
@@ -41,7 +42,10 @@ const AboutSection = () => {
           />
         </motion.div>
       </div>
+      {/* this is for approach */}
       <OurApproach />
+      {/* this is for our team */}
+      <OurTeam />
     </div>
   );
 };

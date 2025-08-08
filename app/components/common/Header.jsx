@@ -1,10 +1,16 @@
+"use client"
 import Link from "next/link";
 import React from "react";
 import Button from "./Button";
+import { motion } from "motion/react";
 
 const Header = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: -30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.6 }}
+    >
       <div
         style={{
           width: "700px",
@@ -24,7 +30,7 @@ const Header = () => {
           <Button label={"Contact Us"} />
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

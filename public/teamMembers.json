@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "John Doe",
+    "skill": "Web Developer",
+    "image": "/img30.avif"
+  },
+  {
+    "id": "2",
+    "name": "Jane Smith",
+    "skill": "Frontend Developer",
+    "image": "/img31.avif"
+  },
+  {
+    "id": "3",
+    "name": "Michael Johnson",
+    "skill": "Backend Developer",
+    "image": "/img32.avif"
+  },
+  {
+    "id": "4",
+    "name": "Emily Davis",
+    "skill": "Full Stack Developer",
+    "image": "/img33.avif"
+  },
+  {
+    "id": "5",
+    "name": "David Wilson",
+    "skill": "UI/UX Designer",
+    "image": "/img34.avif"
+  },
+  {
+    "id": "6",
+    "name": "Sophia Martinez",
+    "skill": "React Developer",
+    "image": "/img35.avif"
+  }
+]
