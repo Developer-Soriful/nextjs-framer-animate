@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
+import SmoothHoverImageMenu from "../HoverImageMenu";
 
 const OurTeam = () => {
   const [teamMembers, setTeamMembers] = useState([]);
@@ -73,6 +74,7 @@ const OurTeam = () => {
           </motion.div>
         ))}
       </div>
+      <SmoothHoverImageMenu />
     </div>
   );
 };

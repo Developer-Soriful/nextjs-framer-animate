@@ -1,11 +1,22 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-import aboutUsImg from "@/public/img29.avif"; // adjust the path according to your project structure
+import aboutUsImg from "@/public/img29.avif";
+import { motion } from "framer-motion";
 
 const OurApproach = () => {
+
   return (
-    <div className="text-[#8d493a] flex justify-between  gap-[50px] flex-col lg:flex-row pb-[100px] lg:pb-[200px]">
-      <div className="flex flex-col justify-between items-start flex-1">
+    <div className="text-[#8d493a] flex justify-between gap-[50px] flex-col lg:flex-row pb-[100px] lg:pb-[200px]">
+      
+      {/* Left - Text */}
+      <motion.div
+        className="flex flex-col justify-between items-start flex-1"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: false, amount: 0.3 }}
+      >
         <div className="flex flex-col gap-5 lg:gap-[40px]">
           <h1 className="flex justify-start items-center gap-1 text-[12px] lg:text-[16px]">
             <span className="w-[6px] h-[6px] bg-[#8d493a] rounded-full block mb-2"></span>{" "}
@@ -27,14 +38,23 @@ const OurApproach = () => {
             beauty lies in the subtle details that make a space feel like home.
           </p>
         </div>
-      </div>
-      <div className="flex-1 ">
+      </motion.div>
+
+      {/* Right - Image */}
+      <motion.div
+        className="flex-1"
+        initial={{ scale: 1, }}
+        whileInView={{ scale: 1.08, }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.3 }}
+        whileHover={{ scale: 1.08 }} // Optional hover zoom
+      >
         <Image
           src={aboutUsImg}
           alt="About Us Image"
-          className="rounded-xl w-full h-[492px] lg:h-[685px]"
+          className="rounded-xl w-full h-[492px] lg:h-[685px] object-cover"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

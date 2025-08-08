@@ -85,7 +85,9 @@ const Home = () => {
         </div>
       </div>
       {/* this is for animate  hover img menu */}
-      <HoverImageMenu />
+      <div className="mx-4 lg:mx-[62px] ">
+        <HoverImageMenu />
+      </div>
       {/* this is for getTouch */}
       <GetInTouch />
       {/* this is for top three news */}

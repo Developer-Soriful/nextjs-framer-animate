@@ -46,6 +46,8 @@ const AboutSection = () => {
       <OurApproach />
       {/* this is for our team */}
       <OurTeam />
+      {/* this is for why us */}
+      
     </div>
   );
 };

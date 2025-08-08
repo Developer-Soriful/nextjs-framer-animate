@@ -56,32 +56,34 @@ const WhatIsNext = () => {
           className="mt-[38px] lg:mt-[73px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 "
         >
           {projects.slice(0, 3).map((item, index) => (
-            <div
-              key={index}
-              className="overflow-hidden pb-5 lg:pb-[30px] cursor-pointer"
-            >
-              {/* Image with Fixed Height + Responsive */}
-              <div className="relative w-full h-[716px] md:h-[396px] overflow-hidden rounded-lg">
-                <Image
-                  src={item.img}
-                  alt={item.title}
-                  fill
-                  className="object-cover rounded-lg transition-transform duration-600 ease-in-out hover:scale-115"
-                />
-              </div>
+            <Link key={index} href={`/news/${item.id}`}>
+              <div
+                key={index}
+                className="overflow-hidden pb-5 lg:pb-[30px] cursor-pointer"
+              >
+                {/* Image with Fixed Height + Responsive */}
+                <div className="relative w-full h-[716px] md:h-[396px] overflow-hidden rounded-lg">
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    fill
+                    className="object-cover rounded-lg transition-transform duration-600 ease-in-out hover:scale-115"
+                  />
+                </div>
 
-              {/* Content */}
-              <div className="pt-[28px] min-h-[106px] text-[#8d493a]">
-                <h1 className="flex items-center gap-1 text-[12px] lg:text-[16px] text-gray-500">
-                  <span className="w-[6px] h-[6px] bg-[#8d493a] rounded-full block"></span>
-                  <span className="text-[14px] text-[#8d493a]">
-                    {item.date}
-                  </span>
-                </h1>
-                <h2 className="text-[22px]">{item.title}</h2>
-                <p className="text-[14px]">{item.subtitle}</p>
+                {/* Content */}
+                <div className="pt-[28px] min-h-[106px] text-[#8d493a]">
+                  <h1 className="flex items-center gap-1 text-[12px] lg:text-[16px] text-gray-500">
+                    <span className="w-[6px] h-[6px] bg-[#8d493a] rounded-full block"></span>
+                    <span className="text-[14px] text-[#8d493a]">
+                      {item.date}
+                    </span>
+                  </h1>
+                  <h2 className="text-[22px]">{item.title}</h2>
+                  <p className="text-[14px]">{item.subtitle}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </motion.div>
       </div>
