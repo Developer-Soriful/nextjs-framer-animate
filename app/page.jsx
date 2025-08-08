@@ -89,7 +89,7 @@ const Home = () => {
       {/* this is for getTouch */}
       <GetInTouch />
       {/* this is for top three news */}
-      <TopThreeNews/>
+      <TopThreeNews />
     </div>
   );
 };
