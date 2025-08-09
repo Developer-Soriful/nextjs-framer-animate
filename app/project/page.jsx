@@ -97,7 +97,6 @@ const Project = () => {
                       className="object-cover rounded-lg transition-transform duration-600 ease-in-out hover:scale-115"
                     />
                   </div>
-
                   {/* Content */}
                   <div className="pt-[28px] min-h-[106px] text-[#8d493a]">
                     <h1 className="flex items-center gap-1 text-[12px] lg:text-[16px] text-gray-500">

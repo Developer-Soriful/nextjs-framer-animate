@@ -5,7 +5,6 @@ import Image from "next/image";
 import OurApproach from "../components/common/OurApproach";
 import OurTeam from "../components/common/OurTeam";
 import WhyUs from "../components/common/WhyUs";
-import ImageScrollStack from "../components/ImageScrollStack";
 import GetInTouch from "../components/GetInTouch";
 import TopThreeNews from "../components/common/TopThreeNews";
 

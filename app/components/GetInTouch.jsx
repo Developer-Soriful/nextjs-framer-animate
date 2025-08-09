@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Button from "./common/Button";
+import Link from "next/link";
 
 const images = ["/img16.avif", "/img9.avif", "/img10.avif"];
 
@@ -55,7 +56,9 @@ export default function GetInTouch() {
               your vision to life with our expertise in design and decoration.
             </p>
             <div>
-              <Button label={"Get in touch"} />
+              <Link href="/contact">
+                <Button label={"Get in touch"} />
+              </Link>
             </div>
           </div>
         </motion.div>
